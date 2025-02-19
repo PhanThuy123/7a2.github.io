@@ -4,55 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài học - Học cùng 7A2</title>
-    <link rel="icon" type="image/svg+xml" href="/mortarboard.svg">
+    <link rel="icon" type="image/svg+xml" href="assets/mortarboard.svg"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Back to Topics Button -->
+    <!-- Nút quay lại danh sách -->
     <div class="position-fixed top-0 start-0 m-4">
-        <a href="index.html" class="btn btn-orange rounded-circle p-3" id="backButton">
+        <a href="index.html" class="btn btn-warning rounded-circle p-3" id="backButton">
             <i class="bi bi-arrow-left fs-4"></i>
         </a>
     </div>
 
     <div class="container py-5">
         <div class="row">
-            <!-- Sidebar with Lesson List -->
+            <!-- Sidebar Danh sách bài học -->
             <div class="col-lg-3">
                 <div class="card border-0 shadow-sm">
                     <div class="card-body">
                         <h5 class="card-title mb-4">Danh sách bài học</h5>
                         <div class="accordion" id="lessonList">
-                            <!-- Lessons will be populated by JavaScript -->
+                            <!-- Nội dung sẽ được thêm bằng JavaScript -->
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Main Content Area -->
+            <!-- Khu vực Nội dung chính -->
             <div class="col-lg-9">
                 <div class="card border-0 shadow-sm">
                     <div class="card-body p-5">
                         <div class="d-flex justify-content-between align-items-center mb-4">
                             <h1 id="lessonTitle" class="mb-0">Chọn một bài học</h1>
                             <div class="lesson-navigation">
-                                <button id="prevLesson" class="btn btn-outline-orange me-2" style="display: none;">
-                                    <i class="bi bi-arrow-left me-2"></i>Bài trước
+                                <button id="prevLesson" class="btn btn-outline-warning me-2 d-none">
+                                    <i class="bi bi-arrow-left me-2"></i> Bài trước
                                 </button>
-                                <button id="nextLesson" class="btn btn-outline-orange" style="display: none;">
-                                    Bài tiếp theo<i class="bi bi-arrow-right ms-2"></i>
+                                <button id="nextLesson" class="btn btn-outline-warning d-none">
+                                    Bài tiếp theo <i class="bi bi-arrow-right ms-2"></i>
                                 </button>
                             </div>
                         </div>
-                        <div id="lessonContent" class="mb-5">
-                            <!-- Lesson content will be populated by JavaScript -->
-                            <p class="text-center text-muted">Vui lòng chọn một bài học từ danh sách bên trái</p>
+                        <div id="lessonContent" class="mb-5 text-center text-muted">
+                            Vui lòng chọn một bài học từ danh sách bên trái
                         </div>
                         <div class="text-center">
-                            <button id="markComplete" class="btn btn-orange btn-lg" style="display: none;">
-                                <i class="bi bi-check-circle me-2"></i>Hoàn thành bài học
+                            <button id="markComplete" class="btn btn-warning btn-lg d-none">
+                                <i class="bi bi-check-circle me-2"></i> Hoàn thành bài học
                             </button>
                         </div>
                     </div>
@@ -61,7 +60,33 @@
         </div>
     </div>
 
+    <!-- Bootstrap & JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const prevLesson = document.getElementById("prevLesson");
+            const nextLesson = document.getElementById("nextLesson");
+            const markComplete = document.getElementById("markComplete");
+            
+            // Kiểm tra nếu đã chọn bài học thì hiển thị các nút
+            function checkLessonStatus() {
+                const lessonTitle = document.getElementById("lessonTitle").innerText;
+                if (lessonTitle !== "Chọn một bài học") {
+                    prevLesson.classList.remove("d-none");
+                    nextLesson.classList.remove("d-none");
+                    markComplete.classList.remove("d-none");
+                } else {
+                    prevLesson.classList.add("d-none");
+                    nextLesson.classList.add("d-none");
+                    markComplete.classList.add("d-none");
+                }
+            }
+
+            // Giả lập chọn bài học
+            setTimeout(checkLessonStatus, 1000);
+        });
+    </script>
 </body>
 </html>
