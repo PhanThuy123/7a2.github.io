@@ -2,7 +2,7 @@ const lessonContents = {
     "1-1": {
         title: "Chủ đề 1: Nguyên tử. Nguyên tố hoá học",
         lessons: {
-            "1-1-1": { title: "Bài 1: Nguyên tử", video: "#", content: "<h1>Bài 1: Nguyên tử</h1><p>Đây là nội dung bài học về nguyên tử.</p>" },
+            "1-1-1": { title: "Bài 1: Nguyên tử", video: "https://youtu.be/rk9fzppLvwE?si=IFI7qSGmLEMW0hoS", content: "<h1>Bài 1: Nguyên tử</h1><p>Đây là nội dung bài học về nguyên tử.</p>" },
             "1-1-2": { title: "Bài 2: Nguyên tố hóa học", video: "#", content: "<h1>Bài 2: Nguyên tố hóa học</h1><p>Đây là nội dung bài học về nguyên tố hóa học.</p>" }
         }
     },
