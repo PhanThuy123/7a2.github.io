@@ -63,32 +63,32 @@ document.addEventListener("DOMContentLoaded", function () {
         { 
             title: "Bài 1: Nguyên tử", 
             content: '<a href="https://gamma.app/docs/Nguyen-Tu-Kham-Pha-The-Gioi-Vi-Mo-wvk51nardvm0nkg" target="_blank">Xem bài giảng</a>',
-            video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/n0YpIEsnVBI" frameborder="0" allowfullscreen></iframe>'
+            video: "https://www.youtube.com/embed/n0YpIEsnVBI"
         },
         { 
             title: "Bài 2: Nguyên tố hóa học", 
             content: '<a href="https://gamma.app/docs/Bai-2-Nguyen-To-Hoa-Hoc-xz1dia5gmm94yeu" target="_blank">Xem bài giảng</a>', 
-            video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/tyBO3kLLu5o" frameborder="0" allowfullscreen></iframe>'
+            video: "https://www.youtube.com/embed/tyBO3kLLu5o"
         },
         { 
             title: "Bài 3: Sơ lược về bảng tuần hoàn các nguyên tố hóa học", 
             content: '<a href="https://gamma.app/docs/So-Luoc-Ve-Bang-Tuan-Hoan-9tu2ddfnx3teltd" target="_blank">Xem bài giảng</a>', 
-            video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/BiFKWYI-daA" frameborder="0" allowfullscreen></iframe>'
+            video: "https://www.youtube.com/embed/BiFKWYI-daA"
         },
         { 
             title: "Bài 4: Phân tử, đơn chất, hợp chất", 
             content: '<a href="https://gamma.app/docs/Bai-4-Phan-Tu-on-Chat-Hop-Chat-9uncx2yr0xnm2td" target="_blank">Xem bài giảng</a>', 
-            video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/eEvOJCXxX2c" frameborder="0" allowfullscreen></iframe>'
+            video: "https://www.youtube.com/embed/eEvOJCXxX2c"
         },
         { 
             title: "Bài 5: Giới thiệu về liên kết hóa học", 
             content: '<a href="https://gamma.app/docs/Gioi-Thieu-Ve-Lien-Ket-Hoa-Hoc-xb96jcyiyjnjtgt" target="_blank">Xem bài giảng</a>',
-            video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/eEvOJCXxX2c" frameborder="0" allowfullscreen></iframe>'
+            video: "https://www.youtube.com/embed/eEvOJCXxX2c"
         },
         { 
             title: "Bài 6: Sóng âm", 
             content: '<a href="https://gamma.app/docs/BAI-6-SONG-AM-g2i4jlv74e80wmx" target="_blank">Xem bài giảng</a>', 
-            video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/c8YLd9zx5LY" frameborder="0" allowfullscreen></iframe>'
+            video:"https://www.youtube.com/embed/c8YLd9zx5LY"
         },
   
         { title: "Bài 7: Hiện tượng quang học", 
@@ -129,9 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
         button.textContent = lesson.title;
         button.onclick = () => loadLesson(index);
         lessonList.appendChild(button);
-        const lessonItem = document.createElement("div");
-        lessonItem.innerHTML = `<h3>${lesson.title}</h3>${lesson.content}<br>${lesson.video}`;
-        lessonList.appendChild(lessonItem);
+    
     });
 
     // Hàm tải bài học
