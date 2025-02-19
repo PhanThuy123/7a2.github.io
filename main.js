@@ -60,8 +60,8 @@ const lessonContents = {
 document.addEventListener("DOMContentLoaded", function () {
     // Danh sách bài học
     const lessons = [
-        { title: "Bài 1 Nguyên tử", content:" " , video: "https://youtu.be/rk9fzppLvwE?si=IFI7qSGmLEMW0hoS" },
-        { title: "Bài 2: Nguyên tố hóa học", content: <a href = "https://gamma.app/docs/Bai-2-Nguyen-To-Hoa-Hoc-xz1dia5gmm94yeu" </a>, video: "https://www.youtube.com/embed/abc456" },
+        { title: "Bài 1 Nguyên tử", content:"<a href="https://gamma.app/docs/Nguyen-Tu-Kham-Pha-The-Gioi-Vi-Mo-wvk51nardvm0nkg" </a>", video: "https://youtu.be/rk9fzppLvwE?si=IFI7qSGmLEMW0hoS" },
+        { title: "Bài 2: Nguyên tố hóa học", content: "<a href="https://gamma.app/docs/Bai-2-Nguyen-To-Hoa-Hoc-xz1dia5gmm94yeu" </a>", video: "https://www.youtube.com/embed/abc456" },
         { title: "Bài 3: Lập trình Python", content: "Python là ngôn ngữ phổ biến trong AI.", video: "" } // Không có video
     ];
 
