@@ -10,7 +10,7 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Nút quay lại danh sách -->
+    <!-- Nút quay lại -->
     <div class="position-fixed top-0 start-0 m-4">
         <a href="index.html" class="btn btn-warning rounded-circle p-3" id="backButton">
             <i class="bi bi-arrow-left fs-4"></i>
@@ -25,13 +25,13 @@
                     <div class="card-body">
                         <h5 class="card-title mb-4">Danh sách bài học</h5>
                         <div class="accordion" id="lessonList">
-                            <!-- Nội dung sẽ được thêm bằng JavaScript -->
+                            <!-- Nội dung danh sách bài học sẽ được thêm bằng JavaScript -->
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Khu vực Nội dung chính -->
+            <!-- Nội dung chính -->
             <div class="col-lg-9">
                 <div class="card border-0 shadow-sm">
                     <div class="card-body p-5">
@@ -69,11 +69,10 @@
             const prevLesson = document.getElementById("prevLesson");
             const nextLesson = document.getElementById("nextLesson");
             const markComplete = document.getElementById("markComplete");
-            
-            // Kiểm tra nếu đã chọn bài học thì hiển thị các nút
+            const lessonTitle = document.getElementById("lessonTitle");
+
             function checkLessonStatus() {
-                const lessonTitle = document.getElementById("lessonTitle").innerText;
-                if (lessonTitle !== "Chọn một bài học") {
+                if (lessonTitle.innerText !== "Chọn một bài học") {
                     prevLesson.classList.remove("d-none");
                     nextLesson.classList.remove("d-none");
                     markComplete.classList.remove("d-none");
@@ -84,8 +83,11 @@
                 }
             }
 
-            // Giả lập chọn bài học
-            setTimeout(checkLessonStatus, 1000);
+            // Lắng nghe thay đổi tiêu đề bài học để cập nhật nút điều hướng
+            const observer = new MutationObserver(checkLessonStatus);
+            observer.observe(lessonTitle, { childList: true });
+
+            checkLessonStatus();
         });
     </script>
 </body>
