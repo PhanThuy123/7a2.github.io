@@ -1,5 +1,5 @@
 // Import styles
-import './style.css';
+import 'style.css';
 import 'bootstrap';
 
 // Dữ liệu bài học
@@ -10,12 +10,12 @@ const lessonContents = {
             "1-1-1": {
                 title: "Bài 1: Nguyên tử",
                 video: "https://www.youtube.com/watch?v=tyBO3kLLu5o",
-                content: `<h1>Bài 1: Nguyên tử</h1><p>Đây là nội dung bài học về nguyên tử.</p>`
+                content: `<h1>Bài 1: Nguyên tử </h1><p>Đây là nội dung bài học về nguyên tử.</p>`
             },
             "1-1-2": {
                 title: "Bài 2: Nguyên tố hóa học",
                 video: "https://www.youtube.com/watch?v=eEvOJCXxX2c",
-                content: `<h1>Bài 2: Nguyên tố hóa học</h1><p>Đây là nội dung bài học về nguyên tố hóa học.</p>`
+                content: "<h1>Bài 2: Nguyên tố hóa học</h1><p>Đây là nội dung bài học về nguyên tố hóa học.</p>"
             }
         }
     }
@@ -56,8 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Xử lý sự kiện khi chọn bài học
     document.querySelectorAll('.lesson-item').forEach(item => {
         item.addEventListener('click', function () {
-            const lessonId = this.dataset.lessonId;
-            const lesson = Object.values(lessonContents).flatMap(t => Object.values(t.lessons)).find(l => l.title === this.textContent.trim());
+            const lesson = Object.entries(lessonContents).flatMap(([_, t]) => Object.entries(t.lessons)).find(([id, _]) => id === lessonId)?.[1];
             
             if (!lesson) {
                 console.error("Không tìm thấy bài học:", lessonId);
