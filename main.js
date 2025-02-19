@@ -60,8 +60,8 @@ const lessonContents = {
 document.addEventListener("DOMContentLoaded", function () {
     // Danh sách bài học
     const lessons = [
-        { title: "Bài 1 Nguyên tử", content: '<a href="https://gamma.app/docs/Nguyen-Tu-Kham-Pha-The-Gioi-Vi-Mo-wvk51nardvm0nkg">Xem bài giảng</a>', video: "https://youtu.be/rk9fzppLvwE?si=IFI7qSGmLEMW0hoS" },
-        { title: "Bài 2: Nguyên tố hóa học", content: '<a href="https://gamma.app/docs/Bai-2-Nguyen-To-Hoa-Hoc-xz1dia5gmm94yeu">Xem bài giảng</a>', video: "https://www.youtube.com/embed/abc456" },
+        { title: "Bài 1: Nguyên tử", content: '<a href="https://gamma.app/docs/Nguyen-Tu-Kham-Pha-The-Gioi-Vi-Mo-wvk51nardvm0nkg" target="_blank">Xem bài giảng</a>', video: "https://www.youtube.com/embed/rk9fzppLvwE" },
+        { title: "Bài 2: Nguyên tố hóa học", content: '<a href="https://gamma.app/docs/Bai-2-Nguyen-To-Hoa-Hoc-xz1dia5gmm94yeu" target="_blank">Xem bài giảng</a>', video: "https://www.youtube.com/embed/abc456" },
         { title: "Bài 3: Lập trình Python", content: "Python là ngôn ngữ phổ biến trong AI.", video: "" }
     ];
 
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const nextLesson = document.getElementById("nextLesson");
     const markComplete = document.getElementById("markComplete");
 
-    // Kiểm tra phần tử lessonList có tồn tại không
+    // Kiểm tra nếu lessonList không tồn tại
     if (!lessonList) {
         console.error("Không tìm thấy phần tử lessonList!");
         return;
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function loadLesson(index) {
         currentIndex = index;
         lessonTitle.innerText = lessons[index].title;
-        lessonContent.innerHTML = lessons[index].content; // Sửa từ innerText thành innerHTML
+        lessonContent.innerHTML = lessons[index].content; // Sử dụng innerHTML để hiển thị thẻ <a>
 
         // Hiển thị video nếu có
         if (lessons[index].video) {
@@ -125,3 +125,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 });
+
