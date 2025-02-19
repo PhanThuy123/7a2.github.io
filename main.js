@@ -65,11 +65,11 @@ document.addEventListener("DOMContentLoaded", function () {
         { title: "Bài 3: Sơ lược về bảng tuần hoàn các nguyên tố hóa học", content: '<a href="https://gamma.app/docs/So-Luoc-Ve-Bang-Tuan-Hoan-9tu2ddfnx3teltd" target="_blank">Xem bài giảng</a>', video: "" },
         { title: "Bài 4: Phân tử,  đơn chất, hợp chất", content: '<a href="https://gamma.app/docs/Bai-4-Phan-Tu-on-Chat-Hop-Chat-9uncx2yr0xnm2td" target="_blank">Xem bài giảng</a>', video: " " },
         { title: "Bài 5: Giới thiệu về liên kết hóa học", content: '<a href="https://gamma.app/docs/Gioi-Thieu-Ve-Lien-Ket-Hoa-Hoc-xb96jcyiyjnjtgt" target="_blank"> Xem bài giảng</a>', video: "" },
-        { title: "Bài 6: Sóng âm", content: '<a href="https://gamma.app/docs/So-Luoc-Ve-Bang-Tuan-Hoan-9tu2ddfnx3teltd" target="_blank"> Xem bài giảng</a>', video: "" },
-        { title: "Bài 7: Hiện tượng quang học", content: '<a href="https://gamma.app/docs/So-Luoc-Ve-Bang-Tuan-Hoan-9tu2ddfnx3teltd" target="_blank"> Xem bài giảng</a>', video: "" },
-        { title: "Bài 8: Quá trình trao đổi chất", content: '<a href="https://gamma.app/docs/So-Luoc-Ve-Bang-Tuan-Hoan-9tu2ddfnx3teltd" target="_blank"> Xem bài giảng</a>', video: "" },
-        { title: "Bài 9: Phản ứng của sinh vật", content: '<a href="https://gamma.app/docs/So-Luoc-Ve-Bang-Tuan-Hoan-9tu2ddfnx3teltd" target="_blank"> Xem bài giảng</a>', video: "" },
-        { title: "Bài 10: Quá trình sinh trưởng", content: '<a href="https://gamma.app/docs/So-Luoc-Ve-Bang-Tuan-Hoan-9tu2ddfnx3teltd" target="_blank"> Xem bài giảng</a>', video: "" },
+        { title: "Bài 6: Sóng âm", content: '<a href="https://gamma.app/docs/BAI-6-SONG-AM-g2i4jlv74e80wmx" target="_blank"> Xem bài giảng</a>', video: "" },
+        { title: "Bài 7: Hiện tượng quang học", content: '<a href="https://gamma.app/docs/Bai-7-Hien-Tuong-Quang-Hoc-3n21mr0ih2smlfr" target="_blank"> Xem bài giảng</a>', video: "" },
+        { title: "Bài 8: Quá trình trao đổi chất", content: '<a href="https://gamma.app/docs/Bai-8-Qua-Trinh-Trao-oi-Chat-5xjc50htzr79gz1" target="_blank"> Xem bài giảng</a>', video: "" },
+        { title: "Bài 9: Phản ứng của sinh vật", content: '<a href="https://gamma.app/docs/Phan-Ung-Cua-Sinh-Vat-xl9ewxym9jyedkb" target="_blank"> Xem bài giảng</a>', video: "" },
+        { title: "Bài 10: Quá trình sinh trưởng", content: '<a href="https://gamma.app/docs/Bai-10-Qua-Trinh-Sinh-Truong-tnjhi7pfrg695tf" target="_blank"> Xem bài giảng</a>', video: "" },
         
     ];
 
