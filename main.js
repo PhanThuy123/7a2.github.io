@@ -57,66 +57,65 @@ const lessonContents = {
 };
 
 // Khởi tạo danh sách bài học khi DOM được tải xong
-document.addEventListener('DOMContentLoaded', function () {
-    const lessonList = document.getElementById('lessonList');
-    if (!lessonList) {
-        console.error("Không tìm thấy phần tử #lessonList!");
-        return;
+document.addEventListener("DOMContentLoaded", function () {
+    // Danh sách bài học
+    const lessons = [
+        { title: "Bài 1: Giới thiệu về AI", content: "AI giúp máy tính thông minh hơn.", video: "https://www.youtube.com/embed/xyz123" },
+        { title: "Bài 2: Machine Learning", content: "Học máy giúp AI cải thiện qua dữ liệu.", video: "https://www.youtube.com/embed/abc456" },
+        { title: "Bài 3: Lập trình Python", content: "Python là ngôn ngữ phổ biến trong AI.", video: "" } // Không có video
+    ];
+
+    let currentIndex = -1; // Chỉ mục bài học hiện tại
+    const lessonList = document.getElementById("lessonList");
+    const lessonTitle = document.getElementById("lessonTitle");
+    const lessonContent = document.getElementById("lessonContent");
+    const lessonVideo = document.getElementById("lessonVideo");
+    const videoContainer = document.getElementById("videoContainer");
+    const prevLesson = document.getElementById("prevLesson");
+    const nextLesson = document.getElementById("nextLesson");
+    const markComplete = document.getElementById("markComplete");
+
+    // Tạo danh sách bài học
+    lessons.forEach((lesson, index) => {
+        const button = document.createElement("button");
+        button.className = "list-group-item list-group-item-action";
+        button.textContent = lesson.title;
+        button.onclick = () => loadLesson(index);
+        lessonList.appendChild(button);
+    });
+
+    // Hàm tải bài học
+    function loadLesson(index) {
+        currentIndex = index;
+        lessonTitle.innerText = lessons[index].title;
+        lessonContent.innerText = lessons[index].content;
+
+        // Hiển thị video nếu có
+        if (lessons[index].video) {
+            lessonVideo.src = lessons[index].video;
+            videoContainer.classList.remove("d-none");
+        } else {
+            lessonVideo.src = "";
+            videoContainer.classList.add("d-none");
+        }
+
+        // Hiển thị nút điều hướng
+        prevLesson.classList.toggle("d-none", index === 0);
+        nextLesson.classList.toggle("d-none", index === lessons.length - 1);
+        markComplete.classList.remove("d-none");
     }
 
-    let html = '';
-    Object.entries(lessonContents).forEach(([topicId, topic]) => {
-        html += `<div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#topic-${topicId}">
-                    ${topic.title}
-                </button>
-            </h2>
-            <div id="topic-${topicId}" class="accordion-collapse collapse">
-                <div class="accordion-body">`;
+    // Chuyển sang bài trước
+    prevLesson.onclick = () => {
+        if (currentIndex > 0) {
+            loadLesson(currentIndex - 1);
+        }
+    };
 
-        Object.entries(topic.lessons).forEach(([lessonId, lesson]) => {
-            html += `<div class="lesson-item d-flex align-items-center p-2" data-lesson-id="${lessonId}" style="cursor: pointer;">
-                        <i class="bi bi-play-circle me-2"></i> ${lesson.title}
-                    </div>`;
-        });
-
-        html += `</div></div></div>`;
-    });
-
-    lessonList.innerHTML = html;
-    console.log("Danh sách bài học được tải thành công:", lessonList.innerHTML);
-
-    // Xử lý sự kiện khi chọn bài học
-    document.querySelectorAll('.lesson-item').forEach(item => {
-        item.addEventListener('click', function () {
-            const lessonId = this.dataset.lessonId;
-
-            // Tìm bài học theo lessonId
-            const lesson = Object.entries(lessonContents)
-                .flatMap(([_, t]) => Object.entries(t.lessons))
-                .find(([id, _]) => id === lessonId)?.[1];
-
-            if (!lesson) {
-                console.error("Không tìm thấy bài học:", lessonId);
-                return;
-            }
-
-            // Kiểm tra phần tử tồn tại trước khi thay đổi nội dung
-            const lessonTitle = document.getElementById('lessonTitle');
-            const lessonContent = document.getElementById('lessonContent');
-
-            if (!lessonTitle || !lessonContent) {
-                console.error("Không tìm thấy phần tử #lessonTitle hoặc #lessonContent!");
-                return;
-            }
-
-            // Hiển thị nội dung bài học
-            lessonTitle.textContent = lesson.title;
-            lessonContent.innerHTML = `
-                <p>${lesson.content}</p>
-                <p><a href="${lesson.video}" target="_blank" class="btn btn-primary">Xem video</a></p>
-            `;
-        });
-    });
+    // Chuyển sang bài tiếp theo
+    nextLesson.onclick = () => {
+        if (currentIndex < lessons.length - 1) {
+            loadLesson(currentIndex + 1);
+        }
+    };
 });
