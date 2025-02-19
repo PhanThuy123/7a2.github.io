@@ -60,7 +60,7 @@ const lessonContents = {
 document.addEventListener("DOMContentLoaded", function () {
     // Danh sách bài học
     const lessons = [
-        { title: "Bài 1: Giới thiệu về AI", content: "AI giúp máy tính thông minh hơn.", video: "https://www.youtube.com/embed/xyz123" },
+        { title: "Bài 1: Giới thiệu về AI", content: "AI giúp máy tính thông minh hơn.", video: "https://youtu.be/rk9fzppLvwE?si=IFI7qSGmLEMW0hoS" },
         { title: "Bài 2: Machine Learning", content: "Học máy giúp AI cải thiện qua dữ liệu.", video: "https://www.youtube.com/embed/abc456" },
         { title: "Bài 3: Lập trình Python", content: "Python là ngôn ngữ phổ biến trong AI.", video: "" } // Không có video
     ];
