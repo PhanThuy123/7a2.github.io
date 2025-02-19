@@ -60,12 +60,12 @@ const lessonContents = {
 document.addEventListener("DOMContentLoaded", function () {
     // Danh sách bài học
     const lessons = [
-        { title: "Bài 1: Nguyên tử", content: '<a href="https://gamma.app/docs/Nguyen-Tu-Kham-Pha-The-Gioi-Vi-Mo-wvk51nardvm0nkg" target="_blank">Xem bài giảng</a>', video: "https://youtu.be/rk9fzppLvwE?si=IFI7qSGmLEMW0hoS" },
-        { title: "Bài 2: Nguyên tố hóa học", content: '<a href="https://gamma.app/docs/Bai-2-Nguyen-To-Hoa-Hoc-xz1dia5gmm94yeu" target="_blank">Xem bài giảng</a>', video: "https://www.youtube.com/embed/abc456" },
-        { title: "Bài 3: Lập trình Python", content: "Python là ngôn ngữ phổ biến trong AI.", video: "" } // Không có video
+        { title: "Bài 1 Nguyên tử", content: '<a href="https://gamma.app/docs/Nguyen-Tu-Kham-Pha-The-Gioi-Vi-Mo-wvk51nardvm0nkg">Xem bài giảng</a>', video: "https://youtu.be/rk9fzppLvwE?si=IFI7qSGmLEMW0hoS" },
+        { title: "Bài 2: Nguyên tố hóa học", content: '<a href="https://gamma.app/docs/Bai-2-Nguyen-To-Hoa-Hoc-xz1dia5gmm94yeu">Xem bài giảng</a>', video: "https://www.youtube.com/embed/abc456" },
+        { title: "Bài 3: Lập trình Python", content: "Python là ngôn ngữ phổ biến trong AI.", video: "" }
     ];
 
-    let currentIndex = -1; // Chỉ mục bài học hiện tại
+    let currentIndex = -1;
     const lessonList = document.getElementById("lessonList");
     const lessonTitle = document.getElementById("lessonTitle");
     const lessonContent = document.getElementById("lessonContent");
@@ -74,6 +74,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const prevLesson = document.getElementById("prevLesson");
     const nextLesson = document.getElementById("nextLesson");
     const markComplete = document.getElementById("markComplete");
+
+    // Kiểm tra phần tử lessonList có tồn tại không
+    if (!lessonList) {
+        console.error("Không tìm thấy phần tử lessonList!");
+        return;
+    }
 
     // Tạo danh sách bài học
     lessons.forEach((lesson, index) => {
@@ -86,24 +92,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Hàm tải bài học
     function loadLesson(index) {
-    currentIndex = index;
-    lessonTitle.innerText = lessons[index].title;
-    lessonContent.innerHTML = lessons[index].content; // Sửa innerText thành innerHTML
+        currentIndex = index;
+        lessonTitle.innerText = lessons[index].title;
+        lessonContent.innerHTML = lessons[index].content; // Sửa từ innerText thành innerHTML
 
-    // Hiển thị video nếu có
-    if (lessons[index].video) {
-        lessonVideo.src = lessons[index].video;
-        videoContainer.classList.remove("d-none");
-    } else {
-        lessonVideo.src = "";
-        videoContainer.classList.add("d-none");
+        // Hiển thị video nếu có
+        if (lessons[index].video) {
+            lessonVideo.src = lessons[index].video;
+            videoContainer.classList.remove("d-none");
+        } else {
+            lessonVideo.src = "";
+            videoContainer.classList.add("d-none");
+        }
+
+        // Hiển thị nút điều hướng
+        prevLesson.classList.toggle("d-none", index === 0);
+        nextLesson.classList.toggle("d-none", index === lessons.length - 1);
+        markComplete.classList.remove("d-none");
     }
-
-    // Hiển thị nút điều hướng
-    prevLesson.classList.toggle("d-none", index === 0);
-    nextLesson.classList.toggle("d-none", index === lessons.length - 1);
-    markComplete.classList.remove("d-none");
-}
 
     // Chuyển sang bài trước
     prevLesson.onclick = () => {
