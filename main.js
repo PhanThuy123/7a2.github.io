@@ -60,8 +60,8 @@ const lessonContents = {
 document.addEventListener("DOMContentLoaded", function () {
     // Danh sách bài học
     const lessons = [
-        { title: "Bài 1 Nguyên tử", content:"<a href="https://gamma.app/docs/Nguyen-Tu-Kham-Pha-The-Gioi-Vi-Mo-wvk51nardvm0nkg" </a>", video: "https://youtu.be/rk9fzppLvwE?si=IFI7qSGmLEMW0hoS" },
-        { title: "Bài 2: Nguyên tố hóa học", content: "<a href="https://gamma.app/docs/Bai-2-Nguyen-To-Hoa-Hoc-xz1dia5gmm94yeu" </a>", video: "https://www.youtube.com/embed/abc456" },
+        { title: "Bài 1: Nguyên tử", content: '<a href="https://gamma.app/docs/Nguyen-Tu-Kham-Pha-The-Gioi-Vi-Mo-wvk51nardvm0nkg" target="_blank">Xem bài giảng</a>', video: "https://youtu.be/rk9fzppLvwE?si=IFI7qSGmLEMW0hoS" },
+        { title: "Bài 2: Nguyên tố hóa học", content: '<a href="https://gamma.app/docs/Bai-2-Nguyen-To-Hoa-Hoc-xz1dia5gmm94yeu" target="_blank">Xem bài giảng</a>', video: "https://www.youtube.com/embed/abc456" },
         { title: "Bài 3: Lập trình Python", content: "Python là ngôn ngữ phổ biến trong AI.", video: "" } // Không có video
     ];
 
@@ -86,24 +86,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Hàm tải bài học
     function loadLesson(index) {
-        currentIndex = index;
-        lessonTitle.innerText = lessons[index].title;
-        lessonContent.innerText = lessons[index].content;
+    currentIndex = index;
+    lessonTitle.innerText = lessons[index].title;
+    lessonContent.innerHTML = lessons[index].content; // Sửa innerText thành innerHTML
 
-        // Hiển thị video nếu có
-        if (lessons[index].video) {
-            lessonVideo.src = lessons[index].video;
-            videoContainer.classList.remove("d-none");
-        } else {
-            lessonVideo.src = "";
-            videoContainer.classList.add("d-none");
-        }
-
-        // Hiển thị nút điều hướng
-        prevLesson.classList.toggle("d-none", index === 0);
-        nextLesson.classList.toggle("d-none", index === lessons.length - 1);
-        markComplete.classList.remove("d-none");
+    // Hiển thị video nếu có
+    if (lessons[index].video) {
+        lessonVideo.src = lessons[index].video;
+        videoContainer.classList.remove("d-none");
+    } else {
+        lessonVideo.src = "";
+        videoContainer.classList.add("d-none");
     }
+
+    // Hiển thị nút điều hướng
+    prevLesson.classList.toggle("d-none", index === 0);
+    nextLesson.classList.toggle("d-none", index === lessons.length - 1);
+    markComplete.classList.remove("d-none");
+}
 
     // Chuyển sang bài trước
     prevLesson.onclick = () => {
