@@ -161,6 +161,11 @@ document.addEventListener("DOMContentLoaded", function () {
             content: '<a href="https://gamma.app/docs/Thuc-hanh-ve-Quang-hop-o-Cay-xanh-y4wsmcszcpotdo6"> Xem bài giảng</a>', 
             video: ""
         },
+        { 
+            title: "Bài 21: Hô hấp tế bào", 
+            content: '<a href="https://gamma.app/docs/Ho-Hap-Te-Bao-Nguon-Nang-Luong-Cho-Su-Song-p075gdmafr8rfim"> Xem bài giảng</a>', 
+            video: ""
+        },
     ];
     let currentIndex = -1;
     const lessonList = document.getElementById("lessonList");
