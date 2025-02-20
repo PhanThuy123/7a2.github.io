@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "Bài 16: Từ trường trái đất", 
             content: '<a href="https://gamma.app/docs/Tu-Truong-Trai-at-6j6jsb5yoy52it6">Xem bài giảng</a>', 
             video: "https://www.youtube.com/embed/qwEreybhBcw"
-        }
+        },
         { 
             title: "Bài 17: Vai của trao đổi chất và chuyển hoá năng lượng ở sinh vật", 
             content: '<a href="https://gamma.app/docs/Vai-tro-cua-Trao-oi-chat-va-Chuyen-hoa-nang-luong-o-Sinh-vat-l9aacrwzaeesqkm"> Xem bài giảng</a>', 
