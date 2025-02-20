@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { 
             title: "Bài 8: Quá trình trao đổi chất", 
             content: '<a href="https://gamma.app/docs/Bai-8-Qua-Trinh-Trao-oi-Chat-5xjc50htzr79gz1" target="_blank"> Xem bài giảng</a>',
-            video: "" 
+            video: "https://www.youtube.com/embed/ZYiuUa1Xl6U" 
         },
         { 
             title: "Bài 9: Phản ứng của sinh vật", 
