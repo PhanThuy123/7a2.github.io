@@ -171,6 +171,27 @@ document.addEventListener("DOMContentLoaded", function () {
             content: '<a href="https://gamma.app/docs/BAI-22-CAC-YEU-TO-ANH-HUONG-EN-HO-HAP-TE-BAO-zj0u6kdkl4zwxzh"> Xem bài giảng</a>', 
             video: ""
         },
+        { 
+            title: "Bài 23: Trao đổi khí ở sinh vật", 
+            content: '<a href="https://gamma.app/docs/BAI-23-TRAO-OI-KHI-O-SINH-VAT-9kjk6w7i3po5sjp"> Xem bài giảng</a>', 
+            video: ""
+        },
+        { 
+            title: "Bài 24: Vai trò của nước và các chất dinh dưỡng đối với cơ thể sinh vật", 
+            content: '<a href="https://gamma.app/docs/Vai-Tro-Cua-Nuoc-va-Dinh-Duong-ou5a1b28dwt4jwi"> Xem bài giảng</a>', 
+            video: ""
+        },
+        { 
+            title: "Bài 25: Trao đổi nước và các chất dinh dưỡng ở thực vật", 
+            content: '<a href="https://gamma.app/docs/Trao-oi-Nuoc-va-Chat-Dinh-Duong-o-Thuc-Vat-1nxnrrr0ub81mq9"> Xem bài giảng</a>', 
+            video: ""
+        },
+        { 
+            title: "Bài 26: Trao đổi nước và các chất dinh dưỡng ở động vật", 
+            content: '<a href="https://gamma.app/docs/Trao-oi-Nuoc-va-Chat-Dinh-Duong-o-ong-Vat-y2fqd8qon6822y3"> Xem bài giảng</a>', 
+            video: ""
+        },
+        
     ];
     let currentIndex = -1;
     const lessonList = document.getElementById("lessonList");
