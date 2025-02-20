@@ -94,7 +94,8 @@ document.addEventListener("DOMContentLoaded", function () {
         { 
             title: "Bài 7: Hiện tượng quang học", 
              content: '<a href="https://gamma.app/docs/Bai-7-Hien-Tuong-Quang-Hoc-3n21mr0ih2smlfr" target="_blank"> Xem bài giảng</a>', 
-             video: "" },
+             video: "" 
+        },
         { 
             title: "Bài 8: Quá trình trao đổi chất", 
              content: '<a href="https://gamma.app/docs/Bai-8-Qua-Trinh-Trao-oi-Chat-5xjc50htzr79gz1" target="_blank"> Xem bài giảng</a>',
@@ -102,14 +103,16 @@ document.addEventListener("DOMContentLoaded", function () {
         { 
             title: "Bài 9: Phản ứng của sinh vật", 
              content: '<a href="https://gamma.app/docs/Phan-Ung-Cua-Sinh-Vat-xl9ewxym9jyedkb" target="_blank"> Xem bài giảng</a>', 
-             video: "" },
+             video: ""
+        },
         { 
             title: "Bài 10: Quá trình sinh trưởng", 
              content: '<a href="https://gamma.app/docs/Bai-10-Qua-Trinh-Sinh-Truong-tnjhi7pfrg695tf" target="_blank"> Xem bài giảng</a>', 
-             video: "" },
+             video: ""
+        },
         
     ];
-let currentIndex = -1;
+    let currentIndex = -1;
     const lessonList = document.getElementById("lessonList");
     const lessonTitle = document.getElementById("lessonTitle");
     const lessonContent = document.getElementById("lessonContent");
