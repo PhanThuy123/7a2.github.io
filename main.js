@@ -163,9 +163,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     ];
 
-    let currentIndex = 0;
-
-    // Lấy các phần tử từ DOM
+    let currentIndex = -1; // Chỉ mục bài học hiện tại
     const lessonList = document.getElementById("lessonList");
     const lessonTitle = document.getElementById("lessonTitle");
     const lessonContent = document.getElementById("lessonContent");
@@ -173,49 +171,50 @@ document.addEventListener("DOMContentLoaded", function () {
     const videoContainer = document.getElementById("videoContainer");
     const prevLesson = document.getElementById("prevLesson");
     const nextLesson = document.getElementById("nextLesson");
+    const markComplete = document.getElementById("markComplete");
 
-    // Kiểm tra nếu các phần tử tồn tại
-    if (!lessonList || !lessonTitle || !lessonContent || !lessonVideo || !videoContainer) {
-        console.error("Một hoặc nhiều phần tử không tồn tại trên trang!");
-        return;
-    }
-
-    // Hiển thị danh sách bài học
+    // Tạo danh sách bài học
     lessons.forEach((lesson, index) => {
-        const listItem = document.createElement("li");
-        listItem.textContent = lesson.title;
-        listItem.classList.add("lesson-item");
-        listItem.addEventListener("click", () => loadLesson(index));
-        lessonList.appendChild(listItem);
+        const button = document.createElement("button");
+        button.className = "list-group-item list-group-item-action";
+        button.textContent = lesson.title;
+        button.onclick = () => loadLesson(index);
+        lessonList.appendChild(button);
     });
 
-    // Hàm hiển thị nội dung bài học
+    // Hàm tải bài học
     function loadLesson(index) {
-        if (index < 0 || index >= lessons.length) return; // Kiểm tra hợp lệ
-
         currentIndex = index;
-        const lesson = lessons[index];
+        lessonTitle.innerText = lessons[index].title;
+        lessonContent.innerText = lessons[index].content;
 
-        lessonTitle.textContent = lesson.title;
-        lessonContent.innerHTML = lesson.content;
-
-        if (lesson.video) {
-            lessonVideo.src = lesson.video;
-            videoContainer.style.display = "block";
+        // Hiển thị video nếu có
+        if (lessons[index].video) {
+            lessonVideo.src = lessons[index].video;
+            videoContainer.classList.remove("d-none");
         } else {
-            videoContainer.style.display = "none";
             lessonVideo.src = "";
+            videoContainer.classList.add("d-none");
         }
 
-        // Cập nhật trạng thái nút
-        prevLesson.disabled = currentIndex === 0;
-        nextLesson.disabled = currentIndex === lessons.length - 1;
+        // Hiển thị nút điều hướng
+        prevLesson.classList.toggle("d-none", index === 0);
+        nextLesson.classList.toggle("d-none", index === lessons.length - 1);
+        markComplete.classList.remove("d-none");
     }
 
-    // Sự kiện cho nút chuyển bài học
-    prevLesson.addEventListener("click", () => loadLesson(currentIndex - 1));
-    nextLesson.addEventListener("click", () => loadLesson(currentIndex + 1));
+    // Chuyển sang bài trước
+    prevLesson.onclick = () => {
+        if (currentIndex > 0) {
+            loadLesson(currentIndex - 1);
+        }
+    };
 
-    // Hiển thị bài học đầu tiên khi tải trang
-    loadLesson(currentIndex);
+    // Chuyển sang bài tiếp theo
+    nextLesson.onclick = () => {
+        if (currentIndex < lessons.length - 1) {
+            loadLesson(currentIndex + 1);
+        }
+    };
+});
 });
