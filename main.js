@@ -111,7 +111,56 @@ document.addEventListener("DOMContentLoaded", function () {
             content: '<a href="https://gamma.app/docs/Bai-10-Qua-Trinh-Sinh-Truong-tnjhi7pfrg695tf" target="_blank"> Xem bài giảng</a>', 
             video: "https://www.youtube.com/embed/DL46mlEx088"
         },
-        
+        { 
+            title: "Bài 11: Phản xạ âm", 
+            content: '<a href="https://gamma.app/docs/Bai-11-Phan-xa-am-15cxymk1bvflg6q">Xem bài giảng</a>', 
+            video: "https://www.youtube.com/embed/KM-QweOcQnE"
+        },
+        { 
+            title: "Bài 12: Ánh sáng và tia sáng", 
+            content: '<a href="https://gamma.app/docs/Bai-12-Anh-sang-tia-sang-mfq0xwuh6ok9byb">Xem bài giảng</a>', 
+            video: "https://www.youtube.com/embed/TkjIfmSTMyI"
+        },
+        { 
+            title: "Bài 13: Sự phản xạ ánh sáng", 
+            content: '<a href="https://gamma.app/docs/Bai-13-Su-Phan-Xa-Anh-Sang-musvx5ijbmdz0yi">Xem bài giảng</a>', 
+            video: "https://www.youtube.com/embed/6tbm7-Q-EBY"
+        },
+        { 
+            title: "Bài 14: Nam châm", 
+            content: '<a href="https://gamma.app/docs/Bai-14-Nam-Cham-d1nto1bq0m7ljqh">Xem bài giảng</a>', 
+            video: "https://www.youtube.com/embed/eYgN-azzTmg"
+        },
+        { 
+            title: "Bài 15: Từ trường", 
+            content: '<a href="https://gamma.app/docs/Bai-15-Tu-Truong-vuf2iwxz7wclfxb">Xem bài giảng</a>', 
+            video: "https://www.youtube.com/embed/wtjjCAHLQWY"
+        },
+        { 
+            title: "Bài 16: Từ trường trái đất", 
+            content: '<a href="https://gamma.app/docs/Tu-Truong-Trai-at-6j6jsb5yoy52it6">Xem bài giảng</a>', 
+            video: "https://www.youtube.com/embed/qwEreybhBcw"
+        },
+        { 
+            title: "Bài 17: Vai của trao đổi chất và chuyển hoá năng lượng ở sinh vật", 
+            content: '<a href="https://gamma.app/docs/Vai-tro-cua-Trao-oi-chat-va-Chuyen-hoa-nang-luong-o-Sinh-vat-l9aacrwzaeesqkm"> Xem bài giảng</a>', 
+            video: ""
+        },
+        { 
+            title: "Bài 18: Quang hợp ở thực vật", 
+            content: '<a href="https://gamma.app/docs/Bai-18-Quang-hop-o-thuc-vat-I-o92hgb4onhm2tlr"> Xem bài giảng</a>', 
+            video: ""
+        },
+        { 
+            title: "Bài 19: Các yếu tố ảnh hưởng đến quang hợp", 
+            content: '<a href="https://gamma.app/docs/Cac-Yeu-To-Anh-Huong-en-Quang-Hop-83k7o8rl8g2hnuh"> Xem bài giảng</a>', 
+            video: ""
+        },
+        { 
+            title: "Bài 20: Thực hành về quang hợp ở cây xanh", 
+            content: '<a href="https://gamma.app/docs/Thuc-hanh-ve-Quang-hop-o-Cay-xanh-y4wsmcszcpotdo6"> Xem bài giảng</a>', 
+            video: ""
+        },
     ];
     let currentIndex = -1;
     const lessonList = document.getElementById("lessonList");
