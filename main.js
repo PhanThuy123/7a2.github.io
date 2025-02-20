@@ -174,8 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
             video: ""
         },
     ];
-
-    
+// Tạo danh sách các bài học
     lessons.forEach((lesson, index) => {
         const button = document.createElement("button");
         button.className = "list-group-item list-group-item-action";
@@ -184,6 +183,7 @@ document.addEventListener("DOMContentLoaded", function () {
         lessonList.appendChild(button);
     });
 
+    // Hàm tải bài học khi người dùng bấm vào
     function loadLesson(index) {
         const lesson = lessons[index];
         lessonTitle.textContent = lesson.title;
@@ -196,6 +196,12 @@ document.addEventListener("DOMContentLoaded", function () {
             videoContainer.style.display = "none";
         }
     }
+
+    // Tải bài học đầu tiên mặc định
+    if (lessons.length > 0) {
+        loadLesson(0);
+    }
+
     // Chuyển sang bài trước
     prevLesson.onclick = () => {
         if (currentIndex > 0) {
