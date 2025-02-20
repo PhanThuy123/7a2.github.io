@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "Bài 2: Nguyên tố hóa học", 
              content: '<a href="https://gamma.app/docs/Bai-2-Nguyen-To-Hoa-Hoc-xz1dia5gmm94yeu" target="_blank">Xem bài giảng</a>', 
              video:"https://youtu.be/tyBO3kLLu5o?si=-IcpVDDA5iSgq4np" 
-            frameborder="0" 
+            
          },
         { 
             title: "Bài 3: Sơ lược về bảng tuần hoàn các nguyên tố hóa học", 
