@@ -109,8 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
              video: "" },
         
     ];
-
-    let currentIndex = -1;
+let currentIndex = -1;
     const lessonList = document.getElementById("lessonList");
     const lessonTitle = document.getElementById("lessonTitle");
     const lessonContent = document.getElementById("lessonContent");
@@ -170,4 +169,3 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 });
-
