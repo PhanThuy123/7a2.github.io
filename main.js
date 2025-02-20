@@ -98,49 +98,49 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         { 
             title: "Bài 8: Quá trình trao đổi chất", 
-            content: '<a href="https://gamma.app/docs/Bai-8-Qua-Trinh-Trao-oi-Chat-5xjc50htzr79gz1" target="_blank"> Xem bài giảng</a>',
-            video: "https://youtu.be/ZYiuUa1Xl6U?si=GZvkGC1uQ2B7hFco"
+            content: '<a href="https://gamma.app/docs/Bai-8-Qua-Trinh-Trao-oi-Chat-5xjc50htzr79gz1" target="_blank">Xem bài giảng</a>',
+            video: "https://www.youtube.com/embed/ZYiuUa1Xl6U"
         },
         { 
             title: "Bài 9: Phản ứng của sinh vật", 
-            content: '<a href="https://gamma.app/docs/Phan-Ung-Cua-Sinh-Vat-xl9ewxym9jyedkb" target="_blank"> Xem bài giảng</a>', 
-            video: "https://youtu.be/zdw87XTXOMg?si=Nl_7igcGimXBtW1_"
+            content: '<a href="https://gamma.app/docs/Phan-Ung-Cua-Sinh-Vat-xl9ewxym9jyedkb" target="_blank">Xem bài giảng</a>', 
+            video: "https://www.youtube.com/embed/zdw87XTXOMg"
         },
         { 
             title: "Bài 10: Quá trình sinh trưởng", 
-            content: '<a href="https://gamma.app/docs/Bai-10-Qua-Trinh-Sinh-Truong-tnjhi7pfrg695tf" target="_blank"> Xem bài giảng</a>', 
-            video: "https://youtu.be/DL46mlEx088?si=bXhb_05lgq02RWDf"
+            content: '<a href="https://gamma.app/docs/Bai-10-Qua-Trinh-Sinh-Truong-tnjhi7pfrg695tf" target="_blank">Xem bài giảng</a>', 
+            video: "https://www.youtube.com/embed/DL46mlEx088"
         },
         { 
             title: "Bài 11: Phản xạ âm", 
-            content: '<a href="https://gamma.app/docs/Bai-11-Phan-xa-am-15cxymk1bvflg6q"> Xem bài giảng</a>', 
-            video: "https://youtu.be/KM-QweOcQnE?si=CLAGgehPjmj3yEpT"
+            content: '<a href="https://gamma.app/docs/Bai-11-Phan-xa-am-15cxymk1bvflg6q">Xem bài giảng</a>', 
+            video: "https://www.youtube.com/embed/KM-QweOcQnE"
         },
         { 
             title: "Bài 12: Ánh sáng và tia sáng", 
-            content: '<a href="https://gamma.app/docs/Bai-12-Anh-sang-tia-sang-mfq0xwuh6ok9byb"> Xem bài giảng</a>', 
-            video: "https://youtu.be/TkjIfmSTMyI?si=0AJ4SlB9ViDmYYN1"
+            content: '<a href="https://gamma.app/docs/Bai-12-Anh-sang-tia-sang-mfq0xwuh6ok9byb">Xem bài giảng</a>', 
+            video: "https://www.youtube.com/embed/TkjIfmSTMyI"
         },
         { 
             title: "Bài 13: Sự phản xạ ánh sáng", 
-            content: '<a href="https://gamma.app/docs/Bai-13-Su-Phan-Xa-Anh-Sang-musvx5ijbmdz0yi"> Xem bài giảng</a>', 
-            video: "https://youtu.be/6tbm7-Q-EBY?si=iaUmnTZHOK1D2JGS"
+            content: '<a href="https://gamma.app/docs/Bai-13-Su-Phan-Xa-Anh-Sang-musvx5ijbmdz0yi">Xem bài giảng</a>', 
+            video: "https://www.youtube.com/embed/6tbm7-Q-EBY"
         },
         { 
             title: "Bài 14: Nam châm", 
-            content: '<a href="https://gamma.app/docs/Bai-14-Nam-Cham-d1nto1bq0m7ljqh"> Xem bài giảng</a>', 
-            video: "https://youtu.be/eYgN-azzTmg?si=VjWWnqcXG9XMUWFX"
+            content: '<a href="https://gamma.app/docs/Bai-14-Nam-Cham-d1nto1bq0m7ljqh">Xem bài giảng</a>', 
+            video: "https://www.youtube.com/embed/eYgN-azzTmg"
         },
         { 
             title: "Bài 15: Từ trường", 
-            content: '<a href="https://gamma.app/docs/Bai-15-Tu-Truong-vuf2iwxz7wclfxb"> Xem bài giảng</a>', 
-            video: "https://youtu.be/wtjjCAHLQWY?si=_yNmWjzjLtKQ4w9E"
+            content: '<a href="https://gamma.app/docs/Bai-15-Tu-Truong-vuf2iwxz7wclfxb">Xem bài giảng</a>', 
+            video: "https://www.youtube.com/embed/wtjjCAHLQWY"
         },
         { 
             title: "Bài 16: Từ trường trái đất", 
-            content: '<a href="https://gamma.app/docs/Tu-Truong-Trai-at-6j6jsb5yoy52it6"> Xem bài giảng</a>', 
-            video: "https://youtu.be/qwEreybhBcw?si=4cgRE9xaH8e45X-_"
-        },
+            content: '<a href="https://gamma.app/docs/Tu-Truong-Trai-at-6j6jsb5yoy52it6">Xem bài giảng</a>', 
+            video: "https://www.youtube.com/embed/qwEreybhBcw"
+        }
         { 
             title: "Bài 17: Vai của trao đổi chất và chuyển hoá năng lượng ở sinh vật", 
             content: '<a href="https://gamma.app/docs/Vai-tro-cua-Trao-oi-chat-va-Chuyen-hoa-nang-luong-o-Sinh-vat-l9aacrwzaeesqkm"> Xem bài giảng</a>', 
