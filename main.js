@@ -166,6 +166,11 @@ document.addEventListener("DOMContentLoaded", function () {
             content: '<a href="https://gamma.app/docs/Ho-Hap-Te-Bao-Nguon-Nang-Luong-Cho-Su-Song-p075gdmafr8rfim"> Xem bài giảng</a>', 
             video: ""
         },
+        { 
+            title: "Bài 22: Các yếu tố ảnh hưởng đến hô hấptế bào", 
+            content: '<a href="https://gamma.app/docs/BAI-22-CAC-YEU-TO-ANH-HUONG-EN-HO-HAP-TE-BAO-zj0u6kdkl4zwxzh"> Xem bài giảng</a>', 
+            video: ""
+        },
     ];
     let currentIndex = -1;
     const lessonList = document.getElementById("lessonList");
