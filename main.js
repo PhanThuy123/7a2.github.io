@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     ];
 
-    let currentIndex = -1; // Chỉ mục bài học hiện tại
+    let currentIndex = -1;
     const lessonList = document.getElementById("lessonList");
     const lessonTitle = document.getElementById("lessonTitle");
     const lessonContent = document.getElementById("lessonContent");
@@ -173,6 +173,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const nextLesson = document.getElementById("nextLesson");
     const markComplete = document.getElementById("markComplete");
 
+    // Kiểm tra nếu lessonList không tồn tại
+    if (!lessonList) {
+        console.error("Không tìm thấy phần tử lessonList!");
+        return;
+    }
+
     // Tạo danh sách bài học
     lessons.forEach((lesson, index) => {
         const button = document.createElement("button");
@@ -181,19 +187,20 @@ document.addEventListener("DOMContentLoaded", function () {
         button.onclick = () => loadLesson(index);
         lessonList.appendChild(button);
     });
-    
+
     // Hàm tải bài học
     function loadLesson(index) {
         currentIndex = index;
         lessonTitle.innerText = lessons[index].title;
-        lessonContent.innerHTML = lessons[index].content; // Dùng innerHTML để giữ nguyên thẻ <a>
+        lessonContent.innerHTML = lessons[index].content; // Sử dụng innerHTML để hiển thị thẻ <a>
 
-        // Hiển thị video nếu có, ẩn nếu không có
+        // Hiển thị video nếu có
         if (lessons[index].video) {
             lessonVideo.src = lessons[index].video;
-            videoContainer.style.display = "block"; // Hiện video
+            videoContainer.classList.remove("d-none");
         } else {
-            videoContainer.style.display = "none"; // Ẩn video nếu không có
+            lessonVideo.src = "";
+            videoContainer.classList.add("d-none");
         }
 
         // Hiển thị nút điều hướng
@@ -214,6 +221,4 @@ document.addEventListener("DOMContentLoaded", function () {
         if (currentIndex < lessons.length - 1) {
             loadLesson(currentIndex + 1);
         }
-    };
-});
-});
+};
