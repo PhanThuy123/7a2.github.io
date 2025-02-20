@@ -173,21 +173,36 @@ document.addEventListener("DOMContentLoaded", function () {
     const nextLesson = document.getElementById("nextLesson");
     const markComplete = document.getElementById("markComplete");
 
-    // Kiểm tra nếu lessonList không tồn tại
-    if (!lessonList) {
-        console.error("Không tìm thấy phần tử lessonList!");
+   // Kiểm tra nếu các phần tử tồn tại
+    if (!lessonList || !lessonTitle || !lessonContent || !lessonVideo || !videoContainer) {
+        console.error("Một hoặc nhiều phần tử không tồn tại trên trang!");
         return;
     }
 
-    // Tạo danh sách bài học
+     // Hiển thị danh sách bài học
     lessons.forEach((lesson, index) => {
-        const button = document.createElement("button");
-        button.className = "list-group-item list-group-item-action";
-        button.textContent = lesson.title;
-        button.onclick = () => loadLesson(index);
-        lessonList.appendChild(button);
-    
+        const listItem = document.createElement("li");
+        listItem.textContent = lesson.title;
+        listItem.classList.add("lesson-item");
+        listItem.addEventListener("click", function () {
+            displayLesson(index);
+        });
+        lessonList.appendChild(listItem);
     });
+
+    // Hàm hiển thị nội dung bài học
+    function displayLesson(index) {
+        const lesson = lessons[index];
+        lessonTitle.textContent = lesson.title;
+        lessonContent.innerHTML = lesson.content;
+
+        if (lesson.video) {
+            lessonVideo.src = lesson.video;
+            videoContainer.style.display = "block";
+        } else {
+            videoContainer.style.display = "none";
+        }
+    }
 
     // Hàm tải bài học
     function loadLesson(index) {
