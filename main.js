@@ -181,20 +181,19 @@ document.addEventListener("DOMContentLoaded", function () {
         button.onclick = () => loadLesson(index);
         lessonList.appendChild(button);
     });
-
+    
     // Hàm tải bài học
     function loadLesson(index) {
         currentIndex = index;
         lessonTitle.innerText = lessons[index].title;
-        lessonContent.innerText = lessons[index].content;
+        lessonContent.innerHTML = lessons[index].content; // Dùng innerHTML để giữ nguyên thẻ <a>
 
-        // Hiển thị video nếu có
+        // Hiển thị video nếu có, ẩn nếu không có
         if (lessons[index].video) {
             lessonVideo.src = lessons[index].video;
-            videoContainer.classList.remove("d-none");
+            videoContainer.style.display = "block"; // Hiện video
         } else {
-            lessonVideo.src = "";
-            videoContainer.classList.add("d-none");
+            videoContainer.style.display = "none"; // Ẩn video nếu không có
         }
 
         // Hiển thị nút điều hướng
