@@ -104,12 +104,12 @@ document.addEventListener("DOMContentLoaded", function () {
         { 
             title: "Bài 9: Phản ứng của sinh vật", 
             content: '<a href="https://gamma.app/docs/Phan-Ung-Cua-Sinh-Vat-xl9ewxym9jyedkb" target="_blank"> Xem bài giảng</a>', 
-            video: ""
+            video: "https://www.youtube.com/embed/zdw87XTXOMg"
         },
         { 
             title: "Bài 10: Quá trình sinh trưởng", 
             content: '<a href="https://gamma.app/docs/Bai-10-Qua-Trinh-Sinh-Truong-tnjhi7pfrg695tf" target="_blank"> Xem bài giảng</a>', 
-            video: ""
+            video: "https://www.youtube.com/embed/DL46mlEx088"
         },
         
     ];
