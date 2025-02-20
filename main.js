@@ -60,66 +60,53 @@ const lessonContents = {
 document.addEventListener("DOMContentLoaded", function () {
     // Danh sách bài học
     const lessons = [
-        { title: "Bài 1: Nguyên tử", 
-             content: '<a href="https://gamma.app/docs/Nguyen-Tu-Kham-Pha-The-Gioi-Vi-Mo-wvk51nardvm0nkg" target="_blank">Xem bài giảng</a>',
-            video: <iframe width="560" height="315" 
-            src="https://youtu.be/n0YpIEsnVBI?si=nRvJcDWNN7IQxXfn" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
+        { 
+            title: "Bài 1: Nguyên tử", 
+            content: '<a href="https://gamma.app/docs/Nguyen-Tu-Kham-Pha-The-Gioi-Vi-Mo-wvk51nardvm0nkg" target="_blank">Xem bài giảng</a>',
+            video: "https://www.youtube.com/embed/n0YpIEsnVBI" 
          },
-        { title: "Bài 2: Nguyên tố hóa học", 
-         content: '<a href="https://gamma.app/docs/Bai-2-Nguyen-To-Hoa-Hoc-xz1dia5gmm94yeu" target="_blank">Xem bài giảng</a>', 
-         video: <iframe width="560" height="315" 
-            src="https://youtu.be/tyBO3kLLu5o?si=-IcpVDDA5iSgq4np" 
+        { 
+            title: "Bài 2: Nguyên tố hóa học", 
+             content: '<a href="https://gamma.app/docs/Bai-2-Nguyen-To-Hoa-Hoc-xz1dia5gmm94yeu" target="_blank">Xem bài giảng</a>', 
+             video:"https://youtu.be/tyBO3kLLu5o?si=-IcpVDDA5iSgq4np" 
             frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
          },
-        { title: "Bài 3: Sơ lược về bảng tuần hoàn các nguyên tố hóa học", 
-         content: '<a href="https://gamma.app/docs/So-Luoc-Ve-Bang-Tuan-Hoan-9tu2ddfnx3teltd" target="_blank">Xem bài giảng</a>', 
-         video: <iframe width="560" height="315" 
-            src="https://youtu.be/BiFKWYI-daA?si=Ss579n3_YJ7BjQ1o" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
+        { 
+            title: "Bài 3: Sơ lược về bảng tuần hoàn các nguyên tố hóa học", 
+             content: '<a href="https://gamma.app/docs/So-Luoc-Ve-Bang-Tuan-Hoan-9tu2ddfnx3teltd" target="_blank">Xem bài giảng</a>', 
+             video:"https://youtu.be/BiFKWYI-daA?si=Ss579n3_YJ7BjQ1o" 
          },
-        { title: "Bài 4: Phân tử,  đơn chất, hợp chất", 
-         content: '<a href="https://gamma.app/docs/Bai-4-Phan-Tu-on-Chat-Hop-Chat-9uncx2yr0xnm2td" target="_blank">Xem bài giảng</a>', 
-         video: <iframe width="560" height="315" 
-            src="https://studio.youtube.com/video/eEvOJCXxX2c/edit" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
+        { 
+            title: "Bài 4: Phân tử,  đơn chất, hợp chất", 
+             content: '<a href="https://gamma.app/docs/Bai-4-Phan-Tu-on-Chat-Hop-Chat-9uncx2yr0xnm2td" target="_blank">Xem bài giảng</a>', 
+             video: "https://studio.youtube.com/video/eEvOJCXxX2c/edit" 
          },
-        { title: "Bài 5: Giới thiệu về liên kết hóa học", 
-         content: '<a href="https://gamma.app/docs/Gioi-Thieu-Ve-Lien-Ket-Hoa-Hoc-xb96jcyiyjnjtgt" target="_blank"> Xem bài giảng</a>',
-         video: <iframe width="560" height="315" 
-            src="https://youtu.be/eEvOJCXxX2c?si=juSsjgojOgHN-SZe"
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
+        { 
+            title: "Bài 5: Giới thiệu về liên kết hóa học", 
+            content: '<a href="https://gamma.app/docs/Gioi-Thieu-Ve-Lien-Ket-Hoa-Hoc-xb96jcyiyjnjtgt" target="_blank"> Xem bài giảng</a>',
+             video: "https://youtu.be/eEvOJCXxX2c?si=juSsjgojOgHN-SZe"
         },
-        { title: "Bài 6: Sóng âm", 
-         content: '<a href="https://gamma.app/docs/BAI-6-SONG-AM-g2i4jlv74e80wmx" target="_blank"> Xem bài giảng</a>', 
-         video: <iframe width="560" height="315" 
-            src="https://youtu.be/c8YLd9zx5LY?si=RjZWL6YeU-3LfWnV"
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
+        { 
+            title: "Bài 6: Sóng âm", 
+             content: '<a href="https://gamma.app/docs/BAI-6-SONG-AM-g2i4jlv74e80wmx" target="_blank"> Xem bài giảng</a>', 
+             video: "https://youtu.be/c8YLd9zx5LY?si=RjZWL6YeU-3LfWnV"
          },
-        { title: "Bài 7: Hiện tượng quang học", 
-         content: '<a href="https://gamma.app/docs/Bai-7-Hien-Tuong-Quang-Hoc-3n21mr0ih2smlfr" target="_blank"> Xem bài giảng</a>', 
-         video: "" },
-        { title: "Bài 8: Quá trình trao đổi chất", 
-         content: '<a href="https://gamma.app/docs/Bai-8-Qua-Trinh-Trao-oi-Chat-5xjc50htzr79gz1" target="_blank"> Xem bài giảng</a>',
-         video: "" },
-        { title: "Bài 9: Phản ứng của sinh vật", 
-         content: '<a href="https://gamma.app/docs/Phan-Ung-Cua-Sinh-Vat-xl9ewxym9jyedkb" target="_blank"> Xem bài giảng</a>', 
-         video: "" },
-        { title: "Bài 10: Quá trình sinh trưởng", 
-         content: '<a href="https://gamma.app/docs/Bai-10-Qua-Trinh-Sinh-Truong-tnjhi7pfrg695tf" target="_blank"> Xem bài giảng</a>', 
-         video: "" },
+        { 
+            title: "Bài 7: Hiện tượng quang học", 
+             content: '<a href="https://gamma.app/docs/Bai-7-Hien-Tuong-Quang-Hoc-3n21mr0ih2smlfr" target="_blank"> Xem bài giảng</a>', 
+             video: "" },
+        { 
+            title: "Bài 8: Quá trình trao đổi chất", 
+             content: '<a href="https://gamma.app/docs/Bai-8-Qua-Trinh-Trao-oi-Chat-5xjc50htzr79gz1" target="_blank"> Xem bài giảng</a>',
+             video: "" },
+        { 
+            title: "Bài 9: Phản ứng của sinh vật", 
+             content: '<a href="https://gamma.app/docs/Phan-Ung-Cua-Sinh-Vat-xl9ewxym9jyedkb" target="_blank"> Xem bài giảng</a>', 
+             video: "" },
+        { 
+            title: "Bài 10: Quá trình sinh trưởng", 
+             content: '<a href="https://gamma.app/docs/Bai-10-Qua-Trinh-Sinh-Truong-tnjhi7pfrg695tf" target="_blank"> Xem bài giảng</a>', 
+             video: "" },
         
     ];
 
