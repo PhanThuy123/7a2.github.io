@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const lessons = [
         { 
             title: "Bài 1: Nguyên tử", 
-            content: '<a href="https://gamma.app/docs/Nguyen-Tu-Kham-Pha-The-Gioi-Vi-Mo-wvk51nardvm0nkg" target="_blank">Xem bài giảng</a>',
+            content: '<a href="https://gamma.app/docs/Nguyen-Tu-Kham-Pha-The-Gioi-Vi-Mo-wvk51nardvm0nkg" target="_blank">Xem bài giảng</a> <a href="https://quizizz.com/join?gc=08181864" target="_blank">Ôn tập Quizizz cùng AI</a>'',
             video: "https://www.youtube.com/embed/n0YpIEsnVBI" 
          },
         { 
