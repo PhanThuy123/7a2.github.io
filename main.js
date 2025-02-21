@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { 
             title: "Bài 4: Phân tử,  đơn chất, hợp chất", 
             content: '<a href="https://gamma.app/docs/Bai-4-Phan-Tu-on-Chat-Hop-Chat-9uncx2yr0xnm2td" target="_blank">Xem bài giảng</a>', 
-            video: "https://studio.youtube.com/embeb/eEvOJCXxX2c/edit" 
+            video: "https://www.youtube.com/embed/eEvOJCXxX2c" 
          },
         { 
             title: "Bài 5: Giới thiệu về liên kết hóa học", 
