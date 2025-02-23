@@ -24,14 +24,14 @@ ul {
 }
 
 li {
-    background: #999966;
+    background: #007bff;
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
 }
 
 li a {
-    color: black;
+    color: white;
     text-decoration: none;
     display: block;
 }
