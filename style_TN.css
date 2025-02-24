@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: # FFEFD5;
+    background-color: #FFEFD5;
     text-align: center;
     margin: 20px;
 }
@@ -24,7 +24,7 @@ ul {
 }
 
 li {
-    background: # FFD700;
+    background: #FFD700;
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
