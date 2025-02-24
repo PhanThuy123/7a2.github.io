@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
             video: ""
         },
         { 
-            title: "Bài 22: Các yếu tố ảnh hưởng đến hô hấptế bào", 
+            title: "Bài 22: Các yếu tố ảnh hưởng đến hô hấp tế bào", 
             content: '<a href="https://gamma.app/docs/BAI-22-CAC-YEU-TO-ANH-HUONG-EN-HO-HAP-TE-BAO-zj0u6kdkl4zwxzh"> Xem bài giảng</a>', 
             video: ""
         },
