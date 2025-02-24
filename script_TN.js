@@ -14,7 +14,7 @@ const exercises = [
 	{ title: "Bài 12: Ánh sáng và tia sáng", link: "https://quizizz.com/join?gc=45613288" },
 	{ title: "Bài 13: Sự phản xạ ánh sáng", link: "https://quizizz.com/join?gc=08519912" },
 	{ title: "Bài 14: Nam châm", link: "https://quizizz.com/join?gc=54132968" },
-	{ title: "Bài 15: Từ trường", link: "" },
+	{ title: "Bài 15: Từ trường", link: "https://quizizz.com/join?gc=07733480" },
 	{ title: "Bài 16: Từ trường trái đất", link: "" },
 	{ title: "Bài 17: Vai trò của trao đổi chất và sự chuyển hóa năng lượng", link: "" },
 	{ title: "Bài 18: Quang hợp ở thực vật", link: "" },
