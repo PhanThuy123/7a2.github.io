@@ -7,10 +7,10 @@ const exercises = [
 	{ title: "Bài 5: Giới thiệu về liên kết hóa học", link: "https://quizizz.com/join?gc=55196520" },
 	{ title: "Bài 6: Sóng âm", link: "https://quizizz.com/join?gc=33275752" },
 	{ title: "Bài 7: Hiện tượng quang học", link: "https://quizizz.com/join?gc=40140648" },
-	{ title: "Bài 8: Quá trình trai đổi chất", link: "https://example.com/bai-4" },
-	{ title: "Bài 9: Phản ứng của sinh vật", link: "https://example.com/bai-4" },
-	{ title: "Bài 10: Quá trình sinh trưởng", link: "https://example.com/bai-4" }
-	{ title: "Bài 11: Phản xạ âm", link: "https://example.com/bai-4" }
+	{ title: "Bài 8: Quá trình trai đổi chất", link: "" },
+	{ title: "Bài 9: Phản ứng của sinh vật", link: "" },
+	{ title: "Bài 10: Quá trình sinh trưởng", link: "" }
+	{ title: "Bài 11: Phản xạ âm", link: "https://quizizz.com/join?gc=43220840" }
 	{ title: "Bài 12: Ánh sáng và tia sáng", link: "https://example.com/bai-4" }
 	{ title: "Bài 13: Sự phản xạ ánh sáng", link: "https://example.com/bai-4" }
 	{ title: "Bài 14: Nam châm", link: "https://example.com/bai-4" }
