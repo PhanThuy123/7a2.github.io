@@ -17,14 +17,14 @@ const exercises = [
 	{ title: "Bài 15: Từ trường", link: "https://quizizz.com/join?gc=07733480" },
 	{ title: "Bài 16: Từ trường trái đất", link: "https://quizizz.com/join?gc=31260904" },
 	{ title: "Bài 17: Vai trò của trao đổi chất và sự chuyển hóa năng lượng", link: "https://quizizz.com/join?gc=50004200" },
-	{ title: "Bài 18: Quang hợp ở thực vật", link: "" },
-	{ title: "Bài 19: Các yếu tố ảnh hưởng đến quang hợp", link: "" },
-	{ title: "Bài 20: Thực hành về quang hợp và cây xanh", link: "" },
-	{ title: "Bài 21: Hô hấp tế bào", link: "" },
-	{ title: "Bài 22: Các yếu tố ảnh hưởng đến hô hấp tế bào", link: "" },
-	{ title: "Bài 23: Trao đổi khí ở sinh vật", link: "" },
-	{ title: "Bài 24: Vai trò của nước và các chất dinh dưỡng đối với cơ thể sinh vật", link: "" },
-	{ title: "Bài 25: Trao đổi nước và các chất dinh dưỡng ở thực vật", link: "" },
+	{ title: "Bài 18: Quang hợp ở thực vật", link: "https://quizizz.com/join?gc=62619880" },
+	{ title: "Bài 19: Các yếu tố ảnh hưởng đến quang hợp", link: "https://quizizz.com/join?gc=60571880" },
+	{ title: "Bài 20: Thực hành về quang hợp và cây xanh", link: "https://quizizz.com/join?gc=60571880" },
+	{ title: "Bài 21: Hô hấp tế bào", link: "https://quizizz.com/join?gc=01261800" },
+	{ title: "Bài 22: Các yếu tố ảnh hưởng đến hô hấp tế bào", link: "https://quizizz.com/join?gc=17252584" },
+	{ title: "Bài 23: Trao đổi khí ở sinh vật", link: "https://quizizz.com/join?gc=19874024" },
+	{ title: "Bài 24: Vai trò của nước và các chất dinh dưỡng đối với cơ thể sinh vật", link: "https://quizizz.com/join?gc=18399464" },
+	{ title: "Bài 25: Trao đổi nước và các chất dinh dưỡng ở thực vật", link: "https://quizizz.com/join?gc=43565288" },
 	{ title: "Bài 26: Trao đổi nước và các chất dinh dưỡng ở động vật", link: "" }
 
 	
