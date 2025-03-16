@@ -169,7 +169,41 @@ document.addEventListener("DOMContentLoaded", function () {
             content: '<a href="https://gamma.app/docs/Trao-oi-Nuoc-va-Chat-Dinh-Duong-o-ong-Vat-y2fqd8qon6822y3"> Xem bài giảng</a>', 
             video: ""
         },
-        
+        { 
+            title: "Bài 27: Khái quát về cảm ứng và cảm ứng ở thực vật", 
+            content: '<a href="https://gamma.app/docs/KHTN-7-Canh-dieu-Bai-27-Khai-quat-ve-cam-ung-va-cam-ung-o-thuc--0kcwormmvf9o05p"> Xem bài giảng</a>', 
+            video: ""
+        },
+        { 
+            title: "Bài 28: Cảm ứng ở động vật", 
+            content: '<a href="https://gamma.app/docs/Bai-28-Cam-Ung-o-ong-Vat-2zwo4chiw9u70ur"> Xem bài giảng</a>', 
+            video: ""
+        },
+        { 
+            title: "Bài 29: Khái quát về sinh trưởng và phát triển ở sinh vật", 
+            content: '<a href="https://gamma.app/docs/KHTN-7-Bai-29-Sinh-Truong-va-Phat-Trien-o-Sinh-Vat-l2l1venpasi1z12"> Xem bài giảng</a>', 
+            video: ""
+        },
+        { 
+            title: "Bài 30: Sinh trưởng và phát triển ở thực vật", 
+            content: '<a href="https://gamma.app/docs/KHTN-7-Bai-30-Sinh-Truong-va-Phat-Trien-o-Thuc-Vat-uge0l1va8g8jnpg"> Xem bài giảng</a>', 
+            video: ""
+        },
+        { 
+            title: "Bài 31: Sinh trưởng và phát triển ở động vật", 
+            content: '<a href="https://gamma.app/docs/KHTN-7-Canh-dieu-Bai-31-Sinh-truong-va-Phat-trien-o-ong-vat-mug5mzvtpxj1vtq"> Xem bài giảng</a>', 
+            video: ""
+        },
+        { 
+            title: "Bài 32: Khái quát về sinh sản và sinh sản vô tính ở sinh vật", 
+            content: '<a href="https://gamma.app/docs/KHTN-7-Canh-dieu-Bai-32-Khai-quat-ve-Sinh-san-va-Sinh-san-Vo-ti-x974wd7eq8w61gj"> Xem bài giảng</a>', 
+            video: ""
+        },
+         { 
+            title: "Bài 33: Sinh sản hữu tính ở sinh vật", 
+            content: '<a href="https://gamma.app/docs/Bai-33-Sinh-San-Huu-Tinh-o-Sinh-Vat-vcbf6tuma4l63u0"> Xem bài giảng</a>', 
+            video: ""
+        },
     ];
     let currentIndex = -1;
     const lessonList = document.getElementById("lessonList");
