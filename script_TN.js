@@ -1,7 +1,7 @@
 // Danh sách bài tập (có thể thay đổi hoặc tải từ tệp JSON)
 const exercises = [
     { title: "Bài 1: Nguyên tử - Mã đề: ucqsd2", link: "https://azota.vn/de-thi/ucqsd2" },
-    { title: "Bài 2: Nguyên tố hóa học", link: "https://quizizz.com/join?gc=05291368" },
+    { title: "Bài 2: Nguyên tố hóa học - Mã đề: dn201f", link: "https://azota.vn/de-thi/dn201f" },
     { title: "Bài 3: Sơ lược về bảng tuần hoàn các nguyên tố hóa học", link: "https://quizizz.com/join?gc=24656744" },
     { title: "Bài 4: Phân tử đơn chất, hợp chất", link: "https://quizizz.com/join?gc=24918888" },
 	{ title: "Bài 5: Giới thiệu về liên kết hóa học", link: "https://quizizz.com/join?gc=55196520" },
