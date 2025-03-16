@@ -204,6 +204,16 @@ document.addEventListener("DOMContentLoaded", function () {
             content: '<a href="https://gamma.app/docs/Bai-33-Sinh-San-Huu-Tinh-o-Sinh-Vat-vcbf6tuma4l63u0"> Xem bài giảng</a>', 
             video: ""
         },
+        { 
+            title: "Bài 34: Các yếu tố ảnh hưởng đến sinh sản và điều khiển sinh sản ở sinh vật", 
+            content: '<a href="https://gamma.app/docs/KHTN-7-Canh-dieu-Bai-34-Cac-Yeu-To-Anh-Huong-en-Sinh-San-va-ieu-vxvich757fqkbbo"> Xem bài giảng</a>', 
+            video: ""
+        },
+        { 
+            title: "Bài 35: Sự thống nhất về cấu trúc và các hoạt động sống trong cơ thể sinh vật", 
+            content: '<a href="https://gamma.app/docs/KHTN-7-Canh-dieu-Bai-35-Su-thong-nhat-ve-cau-truc-va-cac-hoat-ong-en2dljy5be1q7gd"> Xem bài giảng</a>', 
+            video: ""
+        },
     ];
     let currentIndex = -1;
     const lessonList = document.getElementById("lessonList");
