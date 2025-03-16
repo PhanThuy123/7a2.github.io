@@ -2,7 +2,7 @@
 const exercises = [
     { title: "Bài 1: Nguyên tử - Mã đề: ucqsd2", link: "https://azota.vn/de-thi/ucqsd2" },
     { title: "Bài 2: Nguyên tố hóa học - Mã đề: dn201f", link: "https://azota.vn/de-thi/dn201f" },
-    { title: "Bài 3: Sơ lược về bảng tuần hoàn các nguyên tố hóa học", link: "https://quizizz.com/join?gc=24656744" },
+    { title: "Bài 3: Sơ lược về bảng tuần hoàn các nguyên tố hóa học - Mã đề: 8vr3go", link: "https://azota.vn/de-thi/8vr3go" },
     { title: "Bài 4: Phân tử đơn chất, hợp chất", link: "https://quizizz.com/join?gc=24918888" },
 	{ title: "Bài 5: Giới thiệu về liên kết hóa học", link: "https://quizizz.com/join?gc=55196520" },
 	{ title: "Bài 6: Sóng âm", link: "https://quizizz.com/join?gc=33275752" },
