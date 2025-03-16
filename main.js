@@ -7,53 +7,31 @@ const lessonContents = {
         }
     },
     "1-2": {
-        title: "Chủ đề 2: Bảng tuần hoàn",
+        title: "Chủ đề 2: Sơ lược về bảng tuần hoàn các nguyên tố hóa học",
         lessons: {
-            "1-2-1": { title: "Bài 3: Cấu trúc bảng tuần hoàn", video: "#", content: "<h1>Bài 3: Cấu trúc bảng tuần hoàn</h1><p>Đây là nội dung về bảng tuần hoàn.</p>" }
+            "1-2-1": { title: "Bài 3: Sơ lược về bảng tuần hoàn các nguyên tố hóa học", video: "#", content: "<h1>Bài 3: Sơ lược về bảng tuần hoàn các nguyên tố hóa học</h1><p>Đây là nội dung về bảng tuần hoàn.</p>" }
         }
     },
     "1-3": {
         title: "Chủ đề 3: Phân tử",
         lessons: {
-            "1-3-1": { title: "Bài 4: Cấu trúc phân tử", video: "#", content: "<h1>Bài 4: Cấu trúc phân tử</h1><p>Đây là nội dung về phân tử.</p>" }
+            "1-3-1": { title: "Bài 4: Phân tử, đơn chất, hợp chất", video: "#", content: "<h1>Bài 4: Phân tử, đơn chất, hợp chất</h1><p>Đây là nội dung về phân tử.</p>" },
+            "1-3-2": { title: "Bài 5: Giới thiệu về liên kết hóa học", video: "#", content: "<h1>Bài 5: Giới thiệu về liên kết hóa học</h1><p>Đây là nội dung về tốc độ.</p>" },
+            "1-3-3": { title: "Bài 6: Hóa trị, công thức hóa học", video: "#", content: "<h1>Bài 6: Hóa trị, công thức hóa học</h1><p>Đây là nội dung về âm thanh.</p>" }
+            
         }
     },
     "2-4": {
         title: "Chủ đề 4: Tốc độ",
         lessons: {
-            "2-4-1": { title: "Bài 5: Định nghĩa tốc độ", video: "#", content: "<h1>Bài 5: Định nghĩa tốc độ</h1><p>Đây là nội dung về tốc độ.</p>" }
-        }
-    },
-    "2-5": {
-        title: "Chủ đề 5: Âm thanh",
-        lessons: {
-            "2-5-1": { title: "Bài 6: Sóng âm", video: "#", content: "<h1>Bài 6: Sóng âm</h1><p>Đây là nội dung về âm thanh.</p>" }
-        }
-    },
-    "2-6": {
-        title: "Chủ đề 6: Ánh sáng",
-        lessons: {
-            "2-6-1": { title: "Bài 7: Hiện tượng quang học", video: "#", content: "<h1>Bài 7: Hiện tượng quang học</h1><p>Đây là nội dung về ánh sáng.</p>" }
-        }
-    },
-    "3-8": {
-        title: "Chủ đề 8: Trao đổi chất",
-        lessons: {
-            "3-8-1": { title: "Bài 8: Quá trình trao đổi chất", video: "#", content: "<h1>Bài 8: Quá trình trao đổi chất</h1><p>Đây là nội dung về trao đổi chất.</p>" }
-        }
-    },
-    "3-9": {
-        title: "Chủ đề 9: Cảm ứng",
-        lessons: {
-            "3-9-1": { title: "Bài 9: Phản ứng của sinh vật", video: "#", content: "<h1>Bài 9: Phản ứng của sinh vật</h1><p>Đây là nội dung về cảm ứng.</p>" }
-        }
-    },
-    "3-10": {
-        title: "Chủ đề 10: Sinh trưởng",
-        lessons: {
-            "3-10-1": { title: "Bài 10: Quá trình sinh trưởng", video: "#", content: "<h1>Bài 10: Quá trình sinh trưởng</h1><p>Đây là nội dung về sinh trưởng.</p>" }
+            "2-4-1": { title: "Bài 7: Tốc độ của chuyển động", video: "#", content: "<h1>Bài 7: Tốc độ của chuyển động</h1><p>Đây là nội dung về tốc độ.</p>" },
+            "2-4-2": { title: "Bài 8: Đồ thị quãng đường – thời gian", video: "#", content: "<h1>Bài 8: Đồ thị quãng đường – thời gian</h1><p>Đây là nội dung về đồ thị quãng đường.</p>" },
+            "2-4-3": { title: "Bài 9: Sự truyền âm", video: "#", content: "<h1>Bài 9: Sự truyền âm</h1><p>Đây là nội dung về âm thanh.</p>" },
+            "2-4-4": { title: "Bài 10: Biên độ, tần số, độ cao và độ to của âm", video: "#", content: "<h1>Bài 10: Biên độ, tần số, độ cao và độ to của âm</h1><p>Đây là nội dung về truyền âm.</p>" },
+            "2-4-5": { title: "Bài 11: Phản xạ âm", video: "#", content: "<h1>Bài 11: Phản xạ âm</h1><p>Đây là nội dung về phản xạ âm.</p>" }
         }
     }
+    
 };
 
 // Khởi tạo danh sách bài học khi DOM được tải xong
@@ -87,28 +65,28 @@ document.addEventListener("DOMContentLoaded", function () {
             video: "https://www.youtube.com/embed/eEvOJCXxX2c"
         },
         { 
-            title: "Bài 6: Sóng âm", 
-            content: '<a href="https://gamma.app/docs/BAI-6-SONG-AM-g2i4jlv74e80wmx" target="_blank"> Xem bài giảng</a>', 
+            title: "Bài 6: Hóa trị, công thức hóa học", 
+            content: '<a href="https://gamma.app/docs/Bai-6-Hoa-tri-Cong-thuc-hoa-hoc-b08lgseo1tbphft" target="_blank"> Xem bài giảng</a>', 
             video: "https://www.youtube.com/embed/c8YLd9zx5LY"
          },
         { 
-            title: "Bài 7: Hiện tượng quang học", 
-            content: '<a href="https://gamma.app/docs/Bai-7-Hien-Tuong-Quang-Hoc-3n21mr0ih2smlfr" target="_blank"> Xem bài giảng</a>', 
+            title: "Bài 7: Tốc độ của chuyển động", 
+            content: '<a href="https://gamma.app/docs/Bai-7-Toc-o-cua-chuyen-ong-ju9e5g661nle7g8" target="_blank"> Xem bài giảng</a>', 
             video: "" 
         },
         { 
-            title: "Bài 8: Quá trình trao đổi chất", 
-            content: '<a href="https://gamma.app/docs/Bai-8-Qua-Trinh-Trao-oi-Chat-5xjc50htzr79gz1" target="_blank"> Xem bài giảng</a>',
+            title: "Bài 8: Đồ thị quãng đường – thời gian", 
+            content: '<a href="https://gamma.app/docs/Bai-8-o-thi-quang-uong-thoi-gian-95bxxf5fb01jlr3" target="_blank"> Xem bài giảng</a>',
             video: "https://www.youtube.com/embed/ZYiuUa1Xl6U" 
         },
         { 
-            title: "Bài 9: Phản ứng của sinh vật", 
-            content: '<a href="https://gamma.app/docs/Phan-Ung-Cua-Sinh-Vat-xl9ewxym9jyedkb" target="_blank"> Xem bài giảng</a>', 
+            title: "Bài 9: Sự truyền âm", 
+            content: '<a href="https://gamma.app/docs/Bai-9-Su-truyen-am-gbadgt2li3e8ks5" target="_blank"> Xem bài giảng</a>', 
             video: "https://www.youtube.com/embed/zdw87XTXOMg"
         },
         { 
-            title: "Bài 10: Quá trình sinh trưởng", 
-            content: '<a href="https://gamma.app/docs/Bai-10-Qua-Trinh-Sinh-Truong-tnjhi7pfrg695tf" target="_blank"> Xem bài giảng</a>', 
+            title: "Bài 10: Biên độ, tần số, độ cao và độ to của âm", 
+            content: '<a href="https://gamma.app/docs/Bai-10-Bien-o-tan-so-o-cao-va-o-to-cua-am-9m6hbkibovtjzgv" target="_blank"> Xem bài giảng</a>', 
             video: "https://www.youtube.com/embed/DL46mlEx088"
         },
         { 
