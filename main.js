@@ -122,32 +122,32 @@ document.addEventListener("DOMContentLoaded", function () {
         { 
             title: "Bài 17: Vai của trao đổi chất và chuyển hoá năng lượng ở sinh vật", 
             content: '<a href="https://gamma.app/docs/Vai-tro-cua-Trao-oi-chat-va-Chuyen-hoa-nang-luong-o-Sinh-vat-l9aacrwzaeesqkm"> Xem bài giảng</a>', 
-            video: "https://www.youtube.com/embeb/ET1uUjzZpJM&featu"
+            video: "https://www.youtube.com/embeb/ET1uUjzZpJM?si=ourwTgLS9Qf0-yST"
         },
         { 
             title: "Bài 18: Quang hợp ở thực vật", 
             content: '<a href="https://gamma.app/docs/Bai-18-Quang-hop-o-thuc-vat-I-o92hgb4onhm2tlr"> Xem bài giảng</a>', 
-            video: "https://youtube.com/embeb/Q84YfUFbpcY"
+            video: "https://www.youtube/embeb/Q84YfUFbpcY?si=i5zjOMKdKKwvVLFr"
         },
         { 
             title: "Bài 19: Các yếu tố ảnh hưởng đến quang hợp", 
             content: '<a href="https://gamma.app/docs/Cac-Yeu-To-Anh-Huong-en-Quang-Hop-83k7o8rl8g2hnuh"> Xem bài giảng</a>', 
-            video: "https://youtube.com/embeb/OZHPL2SJkRk"
+            video: "https://www.youtube.com/embeb/OZHPL2SJkRk?si=kTk4C4E2kz34uAvN"
         },
         { 
             title: "Bài 20: Thực hành về quang hợp ở cây xanh", 
             content: '<a href="https://gamma.app/docs/Thuc-hanh-ve-Quang-hop-o-Cay-xanh-y4wsmcszcpotdo6"> Xem bài giảng</a>', 
-            video: "https://youtube.com/embeb/utq-p_xvK0s"
+            video: "https://www.youtube.com/embeb/utq-p_xvK0s?si=_BuyZpr-EKT0wbFl"
         },
         { 
             title: "Bài 21: Hô hấp tế bào", 
             content: '<a href="https://gamma.app/docs/Ho-Hap-Te-Bao-Nguon-Nang-Luong-Cho-Su-Song-p075gdmafr8rfim"> Xem bài giảng</a>', 
-            video: "https://www.youtube.com/embeb/UE2VFYdeuas"
+            video: "https://www.youtube.com/embeb/UE2VFYdeuas?si=1dfQsXDblJZWAn9i"
         },
         { 
             title: "Bài 22: Các yếu tố ảnh hưởng đến hô hấp tế bào", 
             content: '<a href="https://gamma.app/docs/BAI-22-CAC-YEU-TO-ANH-HUONG-EN-HO-HAP-TE-BAO-zj0u6kdkl4zwxzh"> Xem bài giảng</a>', 
-            video: "https://youtube.com/embeb/l_KPmvO5PvY"
+            video: "https://www.youtube.com/embeb/l_KPmvO5PvY?si=C6otrHICCigxLfeF"
         },
         { 
             title: "Bài 23: Trao đổi khí ở sinh vật", 
@@ -157,12 +157,12 @@ document.addEventListener("DOMContentLoaded", function () {
         { 
             title: "Bài 24: Vai trò của nước và các chất dinh dưỡng đối với cơ thể sinh vật", 
             content: '<a href="https://gamma.app/docs/Vai-Tro-Cua-Nuoc-va-Dinh-Duong-ou5a1b28dwt4jwi"> Xem bài giảng</a>', 
-            video: "https://youtube.com/embeb/-Mt69Ewj7rs"
+            video: "https://www.youtube.com/embeb/Et-6TKozHAE?si=7pIQJFBQhOXfqaQv"
         },
         { 
             title: "Bài 25: Trao đổi nước và các chất dinh dưỡng ở thực vật", 
             content: '<a href="https://gamma.app/docs/Trao-oi-Nuoc-va-Chat-Dinh-Duong-o-Thuc-Vat-1nxnrrr0ub81mq9"> Xem bài giảng</a>', 
-            video: "https://youtube.com/embeb/rIP2gGxqzCI"
+            video: "https://www.youtube.com/embeb/rIP2gGxqzCI?si=7Pdv-Nt1KnmNJa90"
         },
         { 
             title: "Bài 26: Trao đổi nước và các chất dinh dưỡng ở động vật", 
