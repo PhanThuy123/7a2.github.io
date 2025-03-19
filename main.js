@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { 
             title: "Bài 7: Tốc độ của chuyển động", 
             content: '<a href="https://gamma.app/docs/Bai-7-Toc-o-cua-chuyen-ong-ju9e5g661nle7g8" target="_blank"> Xem bài giảng</a>', 
-            video: "" 
+            video: "https://www.youtube.com/embed/9V5j1l906Nk" 
         },
         { 
             title: "Bài 8: Đồ thị quãng đường – thời gian", 
@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { 
             title: "Bài 26: Trao đổi nước và các chất dinh dưỡng ở động vật", 
             content: '<a href="https://gamma.app/docs/Trao-oi-Nuoc-va-Chat-Dinh-Duong-o-ong-Vat-y2fqd8qon6822y3"> Xem bài giảng</a>', 
-            video: ""
+            video: "https://www.youtube.com/embed/vKR7SviK6r8"
         },
         { 
             title: "Bài 27: Khái quát về cảm ứng và cảm ứng ở thực vật", 
@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { 
             title: "Bài 28: Cảm ứng ở động vật", 
             content: '<a href="https://gamma.app/docs/Bai-28-Cam-Ung-o-ong-Vat-2zwo4chiw9u70ur"> Xem bài giảng</a>', 
-            video: ""
+            video: "https://www.youtube.com/embed/emn3UPly9zQ"
         },
         { 
             title: "Bài 29: Khái quát về sinh trưởng và phát triển ở sinh vật", 
