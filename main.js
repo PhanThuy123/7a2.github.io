@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { 
             title: "Bài 27: Khái quát về cảm ứng và cảm ứng ở thực vật", 
             content: '<a href="https://gamma.app/docs/KHTN-7-Canh-dieu-Bai-27-Khai-quat-ve-cam-ung-va-cam-ung-o-thuc--0kcwormmvf9o05p"> Xem bài giảng</a>', 
-            video: ""
+            video: "https://www.youtube.com/embed/T2QNTQUZXrQ"
         },
         { 
             title: "Bài 28: Cảm ứng ở động vật", 
