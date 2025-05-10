@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { 
             title: "Bài 31: Sinh trưởng và phát triển ở động vật", 
             content: '<a href="https://gamma.app/docs/KHTN-7-Canh-dieu-Bai-31-Sinh-truong-va-Phat-trien-o-ong-vat-mug5mzvtpxj1vtq"> Xem bài giảng</a>', 
-            video: ""
+            video: "https://www.youtube.com/embed/tdPtgi_nH3I"
         },
         { 
             title: "Bài 32: Khái quát về sinh sản và sinh sản vô tính ở sinh vật", 
