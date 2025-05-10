@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { 
             title: "Bài 29: Khái quát về sinh trưởng và phát triển ở sinh vật", 
             content: '<a href="https://gamma.app/docs/KHTN-7-Bai-29-Sinh-Truong-va-Phat-Trien-o-Sinh-Vat-l2l1venpasi1z12"> Xem bài giảng</a>', 
-            video: ""
+            video: "https://www.youtube.com/embed/CjpsLJmnmbs"
         },
         { 
             title: "Bài 30: Sinh trưởng và phát triển ở thực vật", 
