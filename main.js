@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { 
             title: "Bài 30: Sinh trưởng và phát triển ở thực vật", 
             content: '<a href="https://gamma.app/docs/KHTN-7-Bai-30-Sinh-Truong-va-Phat-Trien-o-Thuc-Vat-uge0l1va8g8jnpg"> Xem bài giảng</a>', 
-            video: ""
+            video: "https://www.youtube.com/embed/DV1CiGRzfbY"
         },
         { 
             title: "Bài 31: Sinh trưởng và phát triển ở động vật", 
